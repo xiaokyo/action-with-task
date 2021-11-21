@@ -24,5 +24,6 @@ Promise.all(promises).then((contents) => {
   contents.forEach((text) => {
     _content += text + "\n";
   });
-  send(_content)
+  _content = _content.trim()
+  _content && send(_content)
 });

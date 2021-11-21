@@ -1,7 +1,7 @@
 /** 发送微信消息 */
 
 const axios = require("@/utils/request");
-const dayjs = require("dayjs");
+const dayjs = require("./date");
 
 const secret = `38abc24f-5446-4f78-879f-f5a8f000e102`;
 
