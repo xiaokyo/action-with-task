@@ -22,7 +22,9 @@ async function getRemainBattery() {
       const { d } = value;
       const obj = d[0];
       // send(`房1408-2 剩余电费: ${obj.e}元`);
-      return `房1408-2 剩余电费: ${obj.e}元`;
+      const remain = obj.e
+      if(+remain > 10) return '' // 不提示
+      return `房1408-2 剩余电费: ${remain}元`;
     }
   }
   return "";
