@@ -1,4 +1,6 @@
-/** 剩余电费通知 */
+/** 
+ * @description 1408剩余电费通知
+ */
 const axios = require("@/utils/request");
 
 async function getRemainBattery() {
